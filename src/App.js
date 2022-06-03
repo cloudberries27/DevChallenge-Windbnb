@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+import React from "react";
+import Search from "./components/search";
+import Property from "./components/property";
+import properties from "./data/stays.json";
+import Logo from "./images/logo.png";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <img src={Logo} alt="Windbnb Logo"/>
+        <Search/>
       </header>
+      <section>
+        <div className="top">
+          <h1>Stays in Finland</h1>
+          <p>12+ stays</p>
+        </div>
+        <div className="properties">
+          {properties.map((property, key)=>{
+            if (property.city==="Helsinki"){
+              return (
+                <Property property={property} key={key}/>
+              )
+            } else return <></>
+          })}
+        </div>
+      </section>
     </div>
   );
 }
