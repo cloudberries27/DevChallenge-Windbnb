@@ -3,6 +3,9 @@
   margin: auto;
   padding: 0 2em;
 }
+button span{
+  cursor: inherit;
+}
 header{
   display: flex;
   justify-content: space-between;
@@ -35,7 +38,7 @@ header .search button span{
 }
 
 /* MODAL */
-.modal:before {
+.modal:before{
   content: "";
   display: none;
   background: rgba(0, 0, 0, 0.6);
@@ -87,7 +90,75 @@ header .search button span{
   font-size:14px;
   font-weight:bold
 }
-
+.modal-body form{
+  display: inline-flex;
+  align-items: flex-start;
+}
+.modal-footer{
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+}
+header .search button.filter-button{
+  background-color: #eb5757;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+header .search button.filter-button span{
+  color: white;
+  vertical-align: middle;
+}
+/* Modal Form Component */
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper .input.opened{
+  border: 1px solid #888;
+  border-radius: 10px;
+}
+.input-wrapper .material-icons{
+  font-size: 20px;
+  vertical-align: bottom;
+}
+.guest{
+  display: none;
+}
+.guest.opened{
+  display: block;
+  text-align: initial;
+  width: fit-content;
+}
+.city{
+  display: none;
+}
+.city.opened{
+  display: block;
+  text-align: initial;
+  width: fit-content;
+}
+.city div{
+  padding: 1em 0;
+}
+.quantity{
+  display: flex;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.quantity button{ 
+  background: #dbdbdb;
+  border: none;
+}
+.quantity input{
+  text-align: center;
+  background: none;
+  border: none;
+  font-size: 20px;
+  width: 75px;
+}
 
 
 /* Properties */

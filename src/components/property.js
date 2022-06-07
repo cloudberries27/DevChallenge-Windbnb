@@ -10,7 +10,7 @@ export default function Property({property}){
                     <p>{property.type}</p>
                 </div>
                 <div>
-                    <span class="material-icons rating">star</span>
+                    <span className="material-icons rating">star</span>
                     <p>{property.rating}</p>
                 </div>
             </div>
