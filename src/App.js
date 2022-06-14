@@ -32,6 +32,7 @@ function App() {
           })}
         </div>
       </section>
+      <footer style={{textAlign:"center"}}>created by <a href="https://devchallenges.io/portfolio/cloudberries27" target="_blank" rel="noreferrer">@cloudberries27</a> - devchallenges.io </footer>
     </div>
   );
 }
