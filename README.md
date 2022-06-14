@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/cloudberries27/DevChallenge-Windbnb">
+    <a href="https://cloudberries27.github.io/DevChallenge-Windbnb/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://cloudberries27.github.io/DevChallenge-Windbnb/">
+    <a href="https://github.com/cloudberries27/DevChallenge-Windbnb">
       Solution
     </a>
     <span> | </span>
